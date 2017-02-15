@@ -20,6 +20,10 @@
     });
 
     $app->post("/", function() use ($app) {
+        $new_palindrome = new Palindrome();
+        $sentence_input = $_POST['sentence'];
+
+        $result = $new_palindrome->checkPalindrome_words_in_sentence($sentence_input);
 
 
         return $app['twig']->render('form.html.twig', array('result' => $result));
