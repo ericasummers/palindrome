@@ -60,6 +60,17 @@
             $this->assertEquals("These are palindromes: racecar, hannah", $result);
         }
 
+        function test_palindrome_hardMode()
+        {
+
+            $test_Palindrome = new Palindrome;
+            $input = "race car";
+
+            $result = $test_Palindrome->checkPalindrome_hardMode($input);
+
+            $this->assertEquals("This sentence is a palindrome", $result);
+        }
+
 
     }
 

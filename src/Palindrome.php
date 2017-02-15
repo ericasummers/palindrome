@@ -48,6 +48,29 @@
             }
         }
 
+        function checkPalindrome_hardMode($wordInput)
+        {
+            $new_sentence = preg_replace('/\s/', "", $wordInput);
+            $count_up = array();
+            $count_down = array();
+            $length = strlen($new_sentence);
+            for($x=0;$x<($length/2);$x++){
+                array_push($count_up, $new_sentence[$x]);
+            }
+            for($y=$length-1;$y>=(floor($length/2));$y--){
+                array_push($count_down, $new_sentence[$y]);
+            }
+
+            $difference = array_diff($count_up, $count_down);
+
+            if (empty($difference)) {
+                return "This sentence is a palindrome";
+            } else {
+                return "This sentence is not a palindrome";
+            }
+
+        }
+
 
     }
 
