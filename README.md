@@ -22,6 +22,7 @@ This webpage will allows the user to input a word and check if it is a palindrom
 | Enter a word | "racecar" | "True" |
 | Enter a sentence | "race car" | "True" |
 | Enter a sentence | "this racecar" | "This is a palindrome: racecar" |
+| Enter a sentence | "this racecar hannah" | "These are palindromes: racecar, hannah" |
 | Enter a sentence | "this cat" | "None of these are palindromes" |
 
 ## Known Bugs
