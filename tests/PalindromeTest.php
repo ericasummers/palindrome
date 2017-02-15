@@ -16,6 +16,17 @@
             $this->assertEquals("True", $result);
         }
 
+        function test_palindrome_checker_sentence()
+        {
+
+            $test_Palindrome = new Palindrome;
+            $input = "race car";
+
+            $result = $test_Palindrome->checkPalindrome_sentence($input);
+
+            $this->assertEquals("True", $result);
+        }
+
 
     }
 
