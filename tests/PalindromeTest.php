@@ -5,7 +5,7 @@
     class PalindromeTest extends PHPUnit_Framework_TestCase
     {
 
-        function test_palindrome_checker()
+        function test_palindrome_checker_word()
         {
 
             $test_Palindrome = new Palindrome;

@@ -19,7 +19,9 @@ This webpage will allows the user to input a word and check if it is a palindrom
 
 |Behavior|Input|Output|
 |--------|-----|------|
-|
+| Enter a word | "racecar" | "True" |
+| Enter a sentence | "this racecar" | "This is a palindrome: racecar" |
+| Enter a sentence | "this cat" | "None of these are palindromes" |
 
 ## Known Bugs
 
